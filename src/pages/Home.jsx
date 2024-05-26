@@ -8,7 +8,7 @@ import Product from "./Products/Product";
 const Home = () => {
   const { keyword } = useParams();
   const { data, isLoading, isError } = useGetProductsQuery({ keyword });
-
+  console.log(data);
   return (
     <>
       {!keyword ? <Header /> : null}
@@ -16,7 +16,7 @@ const Home = () => {
         <Loader />
       ) : isError ? (
         <Message variant="danger">
-          {isError?.data.message || isError.error}
+          {isError?.data?.message || isError?.error}
         </Message>
       ) : (
         <>
