@@ -1,4 +1,5 @@
-export const BASE_URL = "http://127.0.0.1:5000";
+export const BASE_URL =
+  "http://internal-eCommerce-Backend-ALB-1162094208.ap-south-1.elb.amazonaws.com";
 export const USERS_URL = "/api/users";
 export const CATEGORY_URL = "/api/category";
 export const PRODUCT_URL = "/api/products";
